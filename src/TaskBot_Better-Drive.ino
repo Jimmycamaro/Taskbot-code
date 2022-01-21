@@ -20,8 +20,7 @@ void setup() {
 }
 
 void loop() {
-
-  
+  driveToLine();
   // prizm.PrizmEnd();              // end program and reset PRIZM
 
 }
