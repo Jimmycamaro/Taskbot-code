@@ -11,6 +11,7 @@ void movementShowcase();
 void rectangleDrive();
 void driveToWall();
 void driveToLine();
+void maze_challange(); 
 
 void setup() {
   prizm.PrizmBegin();            // initialize PRIZM
@@ -20,9 +21,8 @@ void setup() {
 }
 
 void loop() {
-  driveToLine();
-  // prizm.PrizmEnd();              // end program and reset PRIZM
-
+  maze_challange();
+  
 }
 
 void moveMotors(int motorDelay, int motorLeft, int motorRight) {
@@ -108,4 +108,21 @@ void driveToLine() {
 
   delay(50);
   
+}
+
+void maze_challange() {
+    moveMotors(2000, 25, 25);
+    moveMotors(1500, -25, 25);
+    moveMotors(2000, 25, 25);
+    moveMotors(50, -25, 25);
+    moveMotors(2000, 50, 50);
+    moveMotors(700, 25, -25);
+    moveMotors(2500, 50, 50);
+    moveMotors(500, 25, -25);
+    moveMotors(1000, 25, 25);
+    moveMotors(750, 25, -25);
+    moveMotors(1500, 50, 50);
+    moveMotors(500, -25, 25);
+    
+  prizm.PrizmEnd();
 }
