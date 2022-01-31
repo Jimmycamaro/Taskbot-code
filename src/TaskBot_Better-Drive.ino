@@ -111,18 +111,23 @@ void driveToLine() {
 }
 
 void maze_challange() {
-    moveMotors(2000, 25, 25);
-    moveMotors(1500, -25, 25);
-    moveMotors(2000, 25, 25);
-    moveMotors(50, -25, 25);
-    moveMotors(2000, 50, 50);
-    moveMotors(700, 25, -25);
-    moveMotors(2500, 50, 50);
-    moveMotors(500, 25, -25);
-    moveMotors(1000, 25, 25);
-    moveMotors(750, 25, -25);
-    moveMotors(1500, 50, 50);
-    moveMotors(500, -25, 25);
+    moveMotors(2000, 25, 25);   // Drive forward
+    moveMotors(1600, -25, 25);  // Turn right
+    moveMotors(2000, 25, 25);   // Drive forward
+    //moveMotors(50, -25, 25);    // Turn right
+    moveMotors(3000, 50, 50);   // Drive forward
+    moveMotors(700, 25, -25);   // Turn left
+    moveMotors(3500, 50, 50);   // Drive forward
+    moveMotors(700, 25, -25);   // Turn left
+    moveMotors(1000, 25, 25);   // Drive forward
+    /*
+    moveMotors(700, 25, -25);   // Turn right
+    moveMotors(1500, 50, 50);   // Drive forward
+    moveMotors(1000, -25, 25);   // Turn Right
+    moveMotors(1000, 25, 25);    // Drive forward
+    moveMotors(900, 25, -25);   // Turn left
+    moveMotors(700, 25, 25);    // Drive forward
+    */
     
   prizm.PrizmEnd();
 }
